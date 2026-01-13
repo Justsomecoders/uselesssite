@@ -10,21 +10,31 @@
     <h1 id="test"></h1>
     <button onclick="randomsite()">test</button>
     <script>
-    function randomsite(){
-    var rand = Math.floor(Math.random() * 11);
-    document.getElementById("test").innerHTML = rand;
-    if (rand <= 6){
-        window.location = 'https://ihasabucket.com/'
-    }
-    if (rand == 5){
-        window.location = 'https://pointerpointer.com'
-    }
-    if (rand >= 4){
-        window.location = 'https://ihasabucket.com/'
-    }
-    else {
-        return
-    }}                           
+        function randomsite(){
+        var rand = Math.floor(Math.random() * 11);
+        document.getElementById("test").innerHTML = rand;
+        if (rand == 6){
+            window.location = 'https://puginarug.com/'
+        }
+        if (rand == 5){
+            window.location = 'https://thisisnotajumpscare.com/'
+        }
+        if (rand == 7){
+            window.location = 'https://thispersondoesnotexist.com/'
+        }
+        if (rand >= 8){
+            window.location = 'https://pointerpointer.com'
+        }
+        if (rand == 4){
+            window.location = 'https://ihasabucket.com/'
+        }
+        if (rand <= 3){
+            window.location = 'https://sticksfight.com/'
+        }
+        else {
+            return
+        }
+        }            
     </script>
 </body>
 </html>
