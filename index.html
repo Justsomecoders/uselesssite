@@ -76,7 +76,7 @@
     <button onclick="checkText()">Submit</button>
     <div class="p2">
         <p class="hidden" id="hiddenText" style="display:none;">
-        There is a landmine under your house!
+        There is a landmine under your house! And second code is 899193858012
         </p>
     </div>
 
@@ -95,7 +95,7 @@
     <model-viewer alt="bob" src="bob.glb" shadow-intensity="1" ar environment-image="sky.hdr" camera-controls touch-action="pan-y"></model-viewer>
     <div>
         <label for="phone">input phone number: + </label>
-        <select name="phone" id="phone">
+        <select name="phone" id="phone10">
         <option value="0">--Please choose a number--</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -108,7 +108,7 @@
         <option value="9">9</option>
         <option value="0">0</option>
         </select>
-        <select name="phone" id="phone">
+        <select name="phone" id="phone11">
         <option value="0">--Please choose a number--</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -121,7 +121,7 @@
         <option value="9">9</option>
         <option value="0">0</option>
         </select>
-        <select name="phone" id="phone">
+        <select name="phone" id="phone12">
         <option value="0">--Please choose a number--</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -135,7 +135,7 @@
         <option value="0">0</option>
         </select>
         </select>
-        <select name="phone" id="phone">
+        <select name="phone" id="phone13">
         <option value="0">--Please choose a number--</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -277,6 +277,48 @@
             }
         }
         </script>
+
+        <script>
+        function checkText3() {
+            const input10 = document.getElementById("phone10").value;
+            const input11 = document.getElementById("phone11").value;
+            const input12 = document.getElementById("phone12").value;
+            const input13 = document.getElementById("phone13").value;
+            const input14 = (input10, input11, input12, input13);
+            const hidden = document.getElementById("hiddenText3");
+
+            if (input14 === "8991") {
+                hidden.style.display = "block";
+            } else {
+                hidden.style.display = "none";
+            }
+        }
+        </script>
+
+        <small class="hidden3" id="hiddenText3" style="display:none;">
+        --Please do only first four numbers
+        </small>
+
+        <script>
+        function checkText4() {
+            const input10 = document.getElementById("phone10").value;
+            const input11 = document.getElementById("phone11").value;
+            const input12 = document.getElementById("phone12").value;
+            const input13 = document.getElementById("phone13").value;
+            const input14 = (document.getElementById("phone10").value, document.getElementById("phone11").value, document.getElementById("phone12").value, document.getElementById("phone13").value);
+            const hidden = document.getElementById("hiddenText4");
+
+            if (input14 === "1998") {
+                hidden.style.display = "block";
+            } else {
+                hidden.style.display = "none";
+            }
+        }
+        </script>
+
+        <small class="hidden4" id="hiddenText4" style="display:none;">
+        --You have wasted your time--
+        </small>
 
     </div>
 
